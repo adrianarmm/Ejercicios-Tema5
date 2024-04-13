@@ -10,7 +10,7 @@ public class EJ6 {
         if (longitud == 1) {
             return valorDecimal(hexadecimal.charAt(0));
         } else {
-            return valorDecimal(hexadecimal.charAt(longitud - 1)) * Math.pow(16, longitud - 1) + EJ6(hexadecimal, longitud - 1);
+            return (int) (valorDecimal(hexadecimal.charAt(longitud - 1)) * Math.pow(16, longitud - 1) + EJ6(hexadecimal, longitud - 1));
         }
     }
 
