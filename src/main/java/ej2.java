@@ -1,18 +1,24 @@
+import java.util.Scanner;
+
 public class ej2 {
 
     public static void main(String[] args) {
-        int n = 5;
-        long suma = ej2(n);
-        System.out.println("La suma de los " + n + " primeros números naturales es: " + suma);
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Introduce el valor de a: ");
+        int a = scanner.nextInt();
+        System.out.print("Introduce el valor de b: ");
+        int b = scanner.nextInt();
+        ej2(a, b);
     }
 
-    public static long ej2(int n) {
-        if (n <= 0) {
-            return 0;
-        } else if (n == 1) {
-            return 1;
+    public static void ej2(int a, int b) {
+        if (a > b) {
+            System.out.println("La lista de números naturales entre " + a + " y " + b + " está vacía.");
+        } else if (a == b) {
+            System.out.println(a);
         } else {
-            return n + ej2(n - 1);
+            System.out.print(a + " ");
+            ej2(a + 1, b);
         }
     }
 }
