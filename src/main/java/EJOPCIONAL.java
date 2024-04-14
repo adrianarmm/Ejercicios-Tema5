@@ -8,5 +8,12 @@ public class EJOPCIONAL {
         System.out.println(Arrays.toString(array));
     }
 
+    private static void quicksort(int[] array, int izquierda, int derecha) {
+        if (izquierda < derecha) {
+            int pivote = particionOptimizado(array, izquierda, derecha);
+            quicksort(array, izquierda, pivote - 1);
+            quicksort(array, pivote + 1, derecha);
+        }
+    }
 
 }
