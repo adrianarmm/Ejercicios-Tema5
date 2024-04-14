@@ -1,3 +1,4 @@
+import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.ResolverStyle;
@@ -19,5 +20,18 @@ public class EJ12 {
             if (linea.isEmpty()) {
                 break;
             }
-
+            try {
+                LocalDate fecha = LocalDate.parse(linea, formatter);
+                fechas.add(fecha);
+            } catch (DateTimeException e) {
+                System.out.println("La fecha introducida no es válida.");
+            }
+        }
+        Collections.sort(fechas, Comparator.naturalOrder());
+        System.out.println("Las fechas introducidas en orden cronológico son:");
+        for (LocalDate fecha : fechas) {
+            System.out.println(fecha.format(formatter));
+        }
+    }
+}
 }
