@@ -3,6 +3,8 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class EJ9 {
    // PONER ARCHIVOOOOOS
@@ -14,8 +16,7 @@ public class EJ9 {
     private static void ordenarArchivo(String rutaArchivoEntrada, String rutaArchivoSalida)
     {
         try (BufferedReader reader = new BufferedReader(new FileReader(rutaArchivoEntrada));
-             BufferedWriter writer = new BufferedWriter(new FileWriter(rutaArchivoSalida)))
-        {
+             BufferedWriter writer = new BufferedWriter(new FileWriter(rutaArchivoSalida))) {
             List<String> lineas = new ArrayList<>();
             String linea;
             while ((linea = reader.readLine()) != null) {
@@ -31,4 +32,5 @@ public class EJ9 {
         }
     }
 }
+
 
