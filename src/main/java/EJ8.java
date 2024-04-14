@@ -6,4 +6,12 @@ public class EJ8 {
         int genes = contarGenes(adn);
         System.out.println("Número de genes en la cadena de ADN: " + genes);
     }
+
+    private static String generarCadenaAleatoria(int longitud) {
+        String cadena = "";
+        String bases = "ATGC";
+        Random random = new Random();
+        for (int i = 0; i < longitud; i++) {
+            cadena += bases.charAt(random.nextInt(bases.length()));
+        }
 }
