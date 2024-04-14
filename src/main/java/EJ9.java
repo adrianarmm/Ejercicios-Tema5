@@ -21,6 +21,10 @@ public class EJ9 {
             while ((linea = reader.readLine()) != null) {
                 lineas.add(linea);
             }
-
+            lineas.sort(String::compareTo);
+            for (String lineaOrdenada : lineas) {
+                writer.write(lineaOrdenada);
+                writer.newLine();
+            }
 
         }
