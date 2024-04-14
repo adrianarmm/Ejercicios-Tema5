@@ -16,4 +16,21 @@ public class EJOPCIONAL {
         }
     }
 
+    private static int particionOptimizado(int[] array, int izquierda, int derecha) {
+        int pivote = array[derecha];
+        int i = izquierda - 1;
+        for (int j = izquierda; j < derecha; j++) {
+            if (array[j] <= pivote) {
+                i++;
+                int temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
+        int temp = array[i + 1];
+        array[i + 1] = array[derecha];
+        array[derecha] = temp;
+        return i + 1;
+    }
 }
+
