@@ -26,5 +26,10 @@ public class EJ9 {
                 writer.write(lineaOrdenada);
                 writer.newLine();
             }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
 
         }
