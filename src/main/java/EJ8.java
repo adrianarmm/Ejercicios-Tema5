@@ -14,4 +14,5 @@ public class EJ8 {
         for (int i = 0; i < longitud; i++) {
             cadena += bases.charAt(random.nextInt(bases.length()));
         }
+        return cadena;
 }
