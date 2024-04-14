@@ -13,5 +13,31 @@ public class EJ11 {
             System.out.println("La palabra \"" + palabraBuscada + "\" no ha sido encontrada en el archivo.");
         }
     }
-
+    private static boolean buscarPalabraBinaria(String rutaArchivo, String palabraBuscada) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(rutaArchivo))) {
+            List<String> lineas = new ArrayList<>();
+            String linea;
+            while ((linea = reader.readLine()) != null) {
+                lineas.add(linea);
+            }
+            lineas.sort(String::compareTo);
+            int izquierda = 0;
+            int derecha = lineas.size() - 1;
+            while (izquierda <= derecha) {
+                int mitad = (izquierda + derecha) / 2;
+                int comparacion = lineas.get(mitad).compareToIgnoreCase(palabraBuscada);
+                if (comparacion == 0) {
+                    return true;
+                } else if (comparacion < 0) {
+                    izquierda = mitad + 1;
+                } else {
+                    derecha = mitad - 1;
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
 }
+
