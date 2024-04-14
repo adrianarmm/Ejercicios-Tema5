@@ -8,7 +8,7 @@ public class EJ10 {
         // PONER ARCHIVOOOOOS
         String rutaArchivo = "archivo.txt";
         String palabraBuscada = "TIMINA";
-        boolean encontrada = EJ10(rutaArchivo, palabraBuscada);
+        boolean encontrada = buscarPalabra(rutaArchivo, palabraBuscada);
         if (encontrada) {
             System.out.println("La palabra \"" + palabraBuscada + "\" ha sido encontrada en el archivo.");
         } else {
