@@ -15,4 +15,15 @@ public class EJ8 {
             cadena += bases.charAt(random.nextInt(bases.length()));
         }
         return cadena;
+    }
+    private static int contarGenes(String adn) {
+        int genes = 0;
+        int longitud = adn.length();
+        for (int i = 0; i < longitud - 2; i++) {
+            if (adn.substring(i, i + 3).equals("ATG")) {
+                genes++;
+            }
+        }
+        return genes;
+    }
 }
