@@ -9,8 +9,8 @@ import java.util.List;
 public class EJ9 {
    // PONER ARCHIVOOOOOS
     public static void main(String[] args) {
-        String rutaArchivoEntrada = "archivoEntrada.txt";
-        String rutaArchivoSalida = "archivoSalida.txt";
+        String rutaArchivoEntrada = "/Users/adrianareyesmorera/Desktop/CASO5.txt";
+        String rutaArchivoSalida = "/Users/adrianareyesmorera/Desktop/CASO5.txt";
         ordenarArchivo(rutaArchivoEntrada, rutaArchivoSalida);
     }
     private static void ordenarArchivo(String rutaArchivoEntrada, String rutaArchivoSalida)
