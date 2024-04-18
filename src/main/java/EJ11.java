@@ -6,7 +6,7 @@ import java.util.List;
 
 public class EJ11 {
     public static void main(String[] args) {
-        String rutaArchivo = "archivo.txt";
+        String rutaArchivo = "/Users/adrianareyesmorera/Desktop/CASO5.txt";
         String palabraBuscada = "ADENINA";
         boolean encontrada = buscarPalabraBinaria(rutaArchivo, palabraBuscada);
         if (encontrada) {

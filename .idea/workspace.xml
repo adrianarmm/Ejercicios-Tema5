@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b000826d-a672-47a1-825a-899f314b0cdd" name="Changes" comment="35" />
+    <list default="true" id="b000826d-a672-47a1-825a-899f314b0cdd" name="Changes" comment="40">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EJ10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EJ10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EJ11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EJ11.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,9 +24,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2f3bfA6ZK5bWUH4PRxQaarTqp6N" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -32,6 +36,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.EJ1.executor": "Run",
+    "Application.EJ11.executor": "Run",
     "Application.EJ12.executor": "Run",
     "Application.EJ3.executor": "Run",
     "Application.EJ4.executor": "Run",
@@ -39,6 +44,7 @@
     "Application.EJ6.executor": "Run",
     "Application.EJ8.executor": "Run",
     "Application.EJ9.executor": "Run",
+    "Application.EJOPCIONAL.executor": "Run",
     "Application.ej2.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -67,7 +73,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713032812329</updated>
-      <workItem from="1713032813505" duration="4006000" />
+      <workItem from="1713032813505" duration="6255000" />
+      <workItem from="1713283549889" duration="726000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -349,18 +356,53 @@
       <option name="project" value="LOCAL" />
       <updated>1713095200433</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="36">
+      <option name="closed" value="true" />
+      <created>1713095238909</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1713095238909</updated>
+    </task>
+    <task id="LOCAL-00037" summary="37">
+      <option name="closed" value="true" />
+      <created>1713095397354</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1713095397354</updated>
+    </task>
+    <task id="LOCAL-00038" summary="38">
+      <option name="closed" value="true" />
+      <created>1713095412567</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1713095412567</updated>
+    </task>
+    <task id="LOCAL-00039" summary="39">
+      <option name="closed" value="true" />
+      <created>1713095426999</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1713095426999</updated>
+    </task>
+    <task id="LOCAL-00040" summary="40">
+      <option name="closed" value="true" />
+      <created>1713095448185</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1713095448185</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="11" />
-    <MESSAGE value="12" />
-    <MESSAGE value="13" />
-    <MESSAGE value="14" />
-    <MESSAGE value="15" />
     <MESSAGE value="16" />
     <MESSAGE value="17" />
     <MESSAGE value="18" />
@@ -381,7 +423,12 @@
     <MESSAGE value="33" />
     <MESSAGE value="34" />
     <MESSAGE value="35" />
-    <option name="LAST_COMMIT_MESSAGE" value="35" />
+    <MESSAGE value="36" />
+    <MESSAGE value="37" />
+    <MESSAGE value="38" />
+    <MESSAGE value="39" />
+    <MESSAGE value="40" />
+    <option name="LAST_COMMIT_MESSAGE" value="40" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -394,6 +441,11 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/EJ9.java</url>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/EJOPCIONAL.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

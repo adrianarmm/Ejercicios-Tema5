@@ -6,7 +6,7 @@ import java.io.IOException;
 public class EJ10 {
     public static void main(String[] args) {
         // PONER ARCHIVOOOOOS
-        String rutaArchivo = "archivo.txt";
+        String rutaArchivo = "/Users/adrianareyesmorera/Desktop/CASO5.txt";
         String palabraBuscada = "TIMINA";
         boolean encontrada = buscarPalabra(rutaArchivo, palabraBuscada);
         if (encontrada) {
